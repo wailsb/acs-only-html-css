@@ -121,6 +121,7 @@ main{
     background-color: var(--sidebg);
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
 }
 .main-search{
     background-color: var(--lisidehover);
@@ -129,11 +130,39 @@ main{
     background-size: 26px;
     background-position: 10px 10px; 
     background-repeat: no-repeat;
-    padding: 5px 45px;
-    margin: 50px 200px;
-    height: 35px;
+    padding: 15px 45px;
+    margin: 50px 50px;
     border-radius: 20px;
 }
 .main-search:focus{
     outline: none;
+}
+.banner-container{
+    margin: 0px 50px;
+    position: relative;
+
+}
+.banner-container > img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 20px;
+    height: 250px;
+}
+.dot-container{
+    margin: auto;
+    width: 80px;
+    margin-top: 270px;
+    display: flex;
+    justify-content: space-around;
+}
+.dot{
+    height: 10px;
+    width: 12px;
+    background-color: white;
+    border-radius: 999px;
+}
+.dot:hover{
+    transition: 100ms ease-in;
+    background-color: var(--acsred);
 }
