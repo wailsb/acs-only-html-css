@@ -156,6 +156,12 @@ main{
     display: flex;
     justify-content: space-around;
 }
+.dotactive{
+    height: 10px;
+    width: 25px;
+    background-color: var(--acsred);
+    border-radius: 999px;
+}
 .dot{
     height: 10px;
     width: 12px;
