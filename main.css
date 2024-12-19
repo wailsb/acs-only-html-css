@@ -66,7 +66,7 @@ nav ul > a:nth-of-type(2) img{
     display: flex;
 
 }
-.main-container > div{
+.main-container > div:nth-of-type(1){
     background-color: var(--sidebg);
     display: flex;
     flex-direction: column;
@@ -76,20 +76,20 @@ nav ul > a:nth-of-type(2) img{
     overflow-x: hidden;
 }
 
-.main-container > div > img{
+.main-container > div:nth-of-type(1) > img{
     margin: 20px;
     align-self: center;
     height: 62px;
     width: 62px;
 }
 
-.main-container > div li  {
+.main-container > div:nth-of-type(1) li  {
     margin: 5px;
     display: flex;
     align-items: center;
     padding: 5px 10px;
 }
-.main-container > div ul a:hover  {
+.main-container > div:nth-of-type(1) ul a:hover  {
     background-color:var(--lisidehover) ;
     border-left:solid 2px #E35456;
     transition: 100ms ease-in;
@@ -110,4 +110,30 @@ li > span{
 
 .main-container > nav{
     flex-grow: 1;
+}
+.secnd-container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+    background-color: var(--sidebg);
+    display: flex;
+    flex-direction: column;
+}
+.main-search{
+    background-color: var(--lisidehover);
+    border: solid 1px var(--lisidehover);  
+    background-image: url('/public/searchicon.png');
+    background-size: 26px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 5px 45px;
+    margin: 50px 200px;
+    height: 35px;
+    border-radius: 20px;
+}
+.main-search:focus{
+    outline: none;
 }
