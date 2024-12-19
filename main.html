@@ -11,23 +11,46 @@
         <meta name="description" content="Abdou cabba store">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/main.css">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     </head>
     <body>
         <!--
-            START Nav bar
+        Side bar
         -->
-        <nav>
-            <ul>
-                <a href="#">            <li>    <img src="/public/Vector.png" alt="list click"/>    </li></a>
-                <a href="#">            <li>    <img src="/public/acs-logo.png" alt="logo"/>        </li></a>
-                <a href="/shop">        <li>    <img src="/public/Bag-Outline.png" alt="logo"/>     </li></a>
-                <a href="/dashbord">    <li>    <img src="/public/User-Outline.png" alt="logo"/>    </li></a>
-            </ul>
-        </nav>
-        <!-- 
-            END Nav bar
+        <div class="main-container">
+            <div>
+                <img src="/public/acs-logo.png"/>
+                <ul>
+                    <a href="#"><li><img class="icon-side" src="/public/home.png"/>   <span>Home     </span></li></a>
+                    <a href="#"><li><img class="icon-side" src="/public/heart.png"/>  <span>wishlist </span></li></a>
+                    <a href="#"><li><img class="icon-side" src="/public/shop.png"/>   <span>shop     </span></li></a>
+                    <a href="#"><li><img class="icon-side" src="/public/info.png"/>   <span>about us </span></li></a>
+                    <a href="#"><li><img class="icon-side" src="/public/faq.png"/> <span>FAQ         </span></li></a>
+                </ul>
+            </div>
+            <!--
+                START Nav bar
+            -->
+            <nav>
+                <ul>
+                    <a href="#">            <li>    <img src="/public/Vector.png" alt="list click"/>    </li></a>
+                    <a href="#">            <li>    <img src="/public/acs-logo.png" alt="logo"/>        </li></a>
+                    <div class="container-a-li">
+                        <a href="/shop">        <li>    <img src="/public/Bag-Outline.png" alt="logo"/>     </li></a>
+                        <a href="/dashbord">    <li>    <img src="/public/User-Outline.png" alt="logo"/>    </li></a>
+                    </div>
+                </ul>
+            </nav>
+            <!-- 
+                END Nav bar
+            -->
+            
+            
+        </div>
+        <!--
+            End side bar    
         -->
-        
         <script src="/main.js" async defer/>
     </body>
 </html>

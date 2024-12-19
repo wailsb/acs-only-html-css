@@ -1,21 +1,34 @@
 :root{
     --bgcolor:#232327;
+    --sidebg:#151515;
     --textcolor:#FFFFFF;
+    --acsred:#E35456;
+    --lisidehover:#232327;
 }
 *{
     color: var(--textcolor);
+    font-family: 'Montserrat';
 }
-body{
+html,body{
     margin: 0;
+    height: 100%;
 }
 nav{
     background-color: var(--bgcolor);
+    height: fit-content;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+
 }
 nav ul {
     padding: 0;
     margin: 0px 10px;
-    list-style-type: none;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 nav li{
@@ -26,16 +39,13 @@ nav li{
 }
 nav img{
     max-height: 32px;
+    margin: 0 10px;
 }
-nav a {
+ul a {
     display: flex;
     text-decoration: none;
-    flex-grow: 1;
-    flex-shrink: 1;
 }
 nav a:nth-of-type(4) {
-    flex-grow: 0;
-    flex-shrink: 0;
     margin-left: 5px;
 }
 nav a:nth-of-type(2) li {
@@ -44,6 +54,60 @@ nav a:nth-of-type(2) li {
 nav a:nth-of-type(3) li {
     justify-content: end;
 }
-nav a:nth-of-type(2) img{
+nav ul > a:nth-of-type(2) img{
     max-height: 62px;
+}
+.container-a-li{
+    display: flex;
+
+}
+.main-container{
+    height: 100%;
+    display: flex;
+
+}
+.main-container > div{
+    background-color: var(--sidebg);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.main-container > div > img{
+    margin: 20px;
+    align-self: center;
+    height: 62px;
+    width: 62px;
+}
+
+.main-container > div li  {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+.main-container > div ul a:hover  {
+    background-color:var(--lisidehover) ;
+    border-left:solid 2px #E35456;
+    transition: 100ms ease-in;
+}
+.active-side  {
+    background-color:var(--lisidehover) ;
+    border-left:solid 2px #E35456;
+}
+li > span{
+    color: var(--acsred);
+    font-size: 16px;
+    margin: 0 10px;
+}
+.icon-side{
+    height: 24px;
+    width: 24px;
+}
+
+.main-container > nav{
+    flex-grow: 1;
 }
